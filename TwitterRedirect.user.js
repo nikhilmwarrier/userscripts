@@ -1,15 +1,11 @@
 // ==UserScript==
 // @name         Twitter Redirect
 // @namespace    http://nikhilmwarrier.github.io/
-// @version      0.2
+// @version      0.3
 // @description  Redirect Twitter links to Nitter (nitter.net) links
 // @author       nikhilmwarrier
-// @match        http://twitter.com/*
-// @match        http://www.twitter.com/*
-// @match        http://mobile.twitter.com/*
-// @match        https://twitter.com/*
-// @match        https://www.twitter.com/*
-// @match        https://mobile.twitter.com/*
+// @match        http://*.twitter.com/*
+// @match        https://*.twitter.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // @run-at       document-start
