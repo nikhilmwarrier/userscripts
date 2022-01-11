@@ -19,6 +19,7 @@ const badHosts = [
     "android.jlelse.eu",
     "arcdigital.media",
     "betterhumans.coach.me",
+    "betterprogramming.pub",
     "blog.angularindepth.com",
     "blog.bitsrc.io",
     "blog.devartis.com",
