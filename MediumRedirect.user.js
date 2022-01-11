@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Medium Redirect
 // @namespace    http://nikhilmwarrier.github.io/
-// @version      0.3
+// @version      0.1
 // @description  Redirect Medium and its (sub)domains to scribe.rip links
 // @author       nikhilmwarrier
 // @match       http://*/*
@@ -12,6 +12,8 @@
 // Credits: adapted from this gist: https://gist.github.com/samhenrigold/4a082dde823bc3cb62e43a2fc2b12b8e
 
 // Note: This script will redirect ALL recognised medium domains and subdomains to scribe.rip. Functionality like medium.com/search, etc will be lost. 
+
+const preferredScribeInstance = "https://scribe.rip"
 
 const badHosts = [
     "android.jlelse.eu",
@@ -67,7 +69,7 @@ const badHosts = [
 ];
 
 if (badHosts.includes(window.location.host)) {
-    window.location.href = `https://scribe.rip${window.location.pathname}`;
+    window.location.href = preferredScribeInstance + window.location.pathname;
 } else if (window.location.host.includes("medium.com")) {
-           window.location.href = "https://scribe.rip" + window.location.pathname
+           window.location.href = preferredScribeInstance + window.location.pathname
 }
