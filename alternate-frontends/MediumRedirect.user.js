@@ -67,6 +67,7 @@ const badHosts = [
     "uxdesign.cc",
     "uxplanet.org",
     "writingcooperative.com"
+    "xato.net"
 ];
 
 if (badHosts.includes(window.location.host)) {
